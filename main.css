@@ -1,0 +1,162 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.bg-color-header{
+    background: rgb(19, 11, 114);
+}
+
+.navbar-brand{
+    width: 5rem;
+}
+
+#navbar-itens .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+#slider-container{
+    margin-top: 10rem;
+}
+
+
+
+.bi-clipboard2, .bi-calendar4-week, .bi-map, .bi-cpu-fill{
+    font-size: 3rem;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    color: white;
+}
+
+spam{
+    color: white;
+}
+
+.card{
+    margin-top: -25%;
+    height: 100%;
+    border-radius: 1.5rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.btn{
+    margin-bottom: 4rem;
+}
+
+#featured-images .col-md-4 {
+    position: relative;
+    cursor: pointer;
+}
+  
+#featured-images .col-md-4:hover > .banner-content {
+    opacity: 0.8;
+}
+  
+#featured-images .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#footer{
+    background-color: rgb(19, 11, 114);
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+#exampleFormControlTextarea1{
+    height: 10rem;
+}
+
+#contato{
+    margin-bottom: 1.5rem;
+}
+
+.bi-youtube, .bi-instagram, .bi-facebook, .bi-twitter{
+    font-size: 2rem;
+}
+
+.container-sobre{
+    margin-top: 3rem;
+}
+
+@media (max-width: 575px){
+    .card{
+        margin-top: 1rem;
+       
+    }
+    .texto-primario{
+        margin-top: 1.2rem;
+    }
+}
+@media (max-width: 550px){
+    #slider-container{
+        margin-top: 8rem;
+    }
+    .navbar-brand{
+        width: 5rem;
+    }
+    .carousel-control-prev, .carousel-control-next{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px){
+    #slider-container{
+        margin-top: 8rem;
+    }
+    .navbar-brand{
+        width: 3rem;
+    }
+}
+
+@media (max-width: 350px){
+    .btn, h5{
+        font-size: 0.7rem;
+        margin-bottom: -4rem;
+    }
+}
+
+@media (max-width: 1185px){
+    #mapa{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 796px){
+    #mapa{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 315px){
+    #mapa{
+        height: 200px;
+        width: 200px;
+    }
+}

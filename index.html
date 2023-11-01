@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Starfield</title>
+
+    <!--google fonts roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!--css do projeto-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top bg-color-header">
+        <section class="container py-3">
+            <a href="#" class="navbar-brand">
+                <img  src="./images/home.png" alt="logo" class="img-fluid">
+                <spam>Starfield</spam>
+            </a>
+            <button 
+                type="button"
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar-items"
+                aria-controls="navbar-items"
+                aria-expanded="false"
+                aria-label="Navegação resumida"
+                >
+                <i-bi class="bi-list"></i-bi>
+            </button>
+            
+            <section class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" >home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projetos" class="nav-link">projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">sobre</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">contato</a>
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </nav>
+
+</header>
+<body>
+
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="3000" data-bs-ride="carousel">
+            <section class="carousel-indicators">
+                <button
+                    type="button"
+                    class="active"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+
+                <button
+                    type="button"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4">
+                </button>
+            </section>
+
+            <section class="carousel-inner">
+                <section class="carousel-item active">
+                    <img src="./images/hallo1.jpg" alt="Imagem 1" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 1</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/hallo2.jpg" alt="Imagem 2" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 2</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/hallo3.jpg" alt="Imagem 3" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 3</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+
+                <section class="carousel-item">
+                    <img src="./images/hallo4.jpg" alt="Imagem 4" class="d-block w-100">
+                    <section class="carousel-caption">
+                        <h5>casa 4</h5>
+                        <a href="#" class="btn btn-dark">Veja mais</a>
+                    </section>
+                </section>
+                
+            </section>
+       
+            <button type="button"
+            class="carousel-control-prev"
+            data-bs-target="#slider"
+            data-bs-slide="prev">
+            <i class="bi bi-chevron-compact-left"></i>
+            </button:button>
+
+            <button type="button"
+            class="carousel-control-next"
+            data-bs-target="#slider"
+            data-bs-slide="next">
+            <i class="bi bi-chevron-compact-right"></i>
+            </button:button>
+        </section>
+        <section class="col-12" id="mini-banner">
+            <section class="row">
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-clipboard2"></i>
+                        <section class="card-body">
+                            <h1>Sobre</h1>
+                            <p>Starfield é o novo RPG de ação e aventura da Bethesda, responsável pelas séries Fallout e The Elder Scrolls. O game é ambientado no espaço e coloca seus jogadores para explorarem diversos planetas diferentes, além de investigarem um grande mistério do universo. Um grande destaque é o seu longo tempo de produção, já que o jogo foi anunciado durante a E3 2018 e desenvolvido por mais de oito anos.</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Itens de missões</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                           <p>Starfield é o novo RPG de ação e aventura da Bethesda, responsável pelas séries Fallout e The Elder Scrolls. O game é ambientado no espaço e coloca seus jogadores para explorarem diversos planetas diferentes, além de investigarem um grande mistério do universo. Um grande destaque é o seu longo tempo de produção, já que o jogo foi anunciado durante a E3 2018 e desenvolvido por mais de oito anos.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-calendar4-week"></i>
+                        <section class="card-body">
+                            <h1>História</h1>
+                            <p>Festivais são eventos especiais no Stardew Valley. Cada estação tem dois festivais. O prefeito Lewis lhe enviará uma carta com antecedência de cada festival, descrevendo quando e onde será o lugar. Participar de festivais é opcional. No dia do festival, um pop-up no lado esquerdo da tela permitirá que você saiba quando o festival começou.</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal2">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Festivais</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Starfield se passa durante o ano de 2320 nos Sistemas Colonizados, uma região remota na Via Láctea que abrange mais de 100 sistemas estelares e 1000 planetas. Os jogadores assumem o papel de um dos exploradores espaciais da Constelação, um grupo de aventureiros que busca desvendar diversos segredos escondidos pela galáxia. Durante a trama, os integrantes procuram artefatos misteriosos em meio a uma guerra territorial entre as facções United Colonies e Freestar Collective.</p>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-cpu-fill"></i>
+                        <section class="card-body">
+                            <h1>Requisitos</h1>
+                            <p>Minimum
+                                OS: Windows 10 version 22H2 (10.0.19045)
+                                Processor: AMD Ryzen 5 2600X, Intel Core i7-6800K
+                                Memory: 16 GB RAM
+                                Graphics: AMD Radeon RX 5700, NVIDIA GeForce 1070 Ti
+                                DirectX: Version 12
+                                Storage: 125 GB available space
+                                Additional Notes: SSD Required
+                               </p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal3">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Requisitos</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Minimum
+                                                OS: Windows 10 version 22H2 (10.0.19045)
+                                                Processor: AMD Ryzen 5 2600X, Intel Core i7-6800K
+                                                Memory: 16 GB RAM
+                                                Graphics: AMD Radeon RX 5700, NVIDIA GeForce 1070 Ti
+                                                DirectX: Version 12
+                                                Storage: 125 GB available space
+                                                Additional Notes: SSD Required
+                                                </p>
+                                                <p>Recommended
+                                                OS: Windows 10/11 with updates
+                                                Processor: AMD Ryzen 5 3600X, Intel i5-10600K
+                                                Memory: 16 GB RAM
+                                                Graphics: AMD Radeon RX 6800 XT, NVIDIA GeForce RTX 2080
+                                                DirectX: Version 12
+                                                Network: Broadband Internet connection
+                                                Storage: 125 GB available space
+                                                Additional Notes: SSD Required</p>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-sm-3">
+                    <section class="card text-center">
+                        <i class="bi bi-map"></i>
+                        <section class="card-body">
+                            <h1>Um Novo Mundo</h1>
+                            <p>Após 25 anos de processo criativo, Starfield traz uma fronteira inédita a ser explorada: o espaço. Em 2330, vocês entram para a Constelação, o último grupo de exploradores espaciais que buscam artefatos raros pela galáxia. Aventurem-se pelas estrelas e conheçam um elenco memorável de personagens numa missão para responder à maior pergunta da humanidade: o que há lá fora?</p>
+                            <!-- botão para abrir o modal -->
+                            <button type="button" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal4">Veja mais</button>
+                            <!--corpo do Modal -->
+                            <div class="modal fade modal-lg" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Locais</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Artefatos podem ser adquiridos da seguinte maneira:</h3><p>Usando a Enxada em um Ponto de artefato. Diferentes partes do mapa soltam diferentes artefatos. Estes locais são muito mais comuns no Inverno.Usando a Enxada no solo em Minas e Caverna da Caveira.Matando Monstros.Pesca em baús do tesouro.</p>
+                                            <h3>Artefatos</h3><p>Pergaminho dos anões, Pergaminho dos anões II, Pergaminho dos anões III, 	Pergaminho dos anões IV, Ânfora quebrada, Ponta de flecha, Boneco antigo, Joias Élficas, Palha para mastigar, Leque ornamental, Ovo de dinossauro, 	Disco raro, Espada antiga, Colher enferrujada, Esporão enferrujado, Engrenagem velha, Estátua de galinha, Semente antiga, Ferramenta pré-histórica, Estrela-do-mar ressecada, Âncora, Cacos de vidro, Flauta de ossos, Biface pré-histórico, Elmo anão, Dispositivo de anão, Tambor antigo, Máscara dourada, Relíquia dourada, Boneco estranho, Escápula pré-histórica, Tíbia pré-histórica, Caveira pré-histórica, Mão de esqueleto, Costela pré-história, Vértebra pré-histórica, Esqueleto de cauda, Fóssil de náutilo, Fóssil de anfíbio, Fóssil de Palma, Trilobita.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--fim do modal-->
+                        </section>
+                    </section>
+                </section>
+                <!--final dos cards-->
+
+            </section>
+        </section>
+    </section>
+
+    <!--destaques-->
+    <!--inicio do conteiner-->
+
+    <section class="container" id="featured-container">
+        <section class="col-12">
+            <h2 class="title primary-color texto-primario" id="projetos">Trabalho em destaque</h2>
+            <p class="subtitle secondary-color">Conheça nossos projetos mais desafiadores</p>
+        </section>
+
+        <!-- Início das imagens-->
+        <section class="col-12" id="featured-images">
+            <section class="row g-4">
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/hallo1.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/hallo2.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/hallo3.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/hallo4.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1205609.jpg" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-4">
+                    <img src="./images/1331492.png" alt="" class="img-fluid">
+                    <section class="banner-content">
+                        <p>Categoria</p>
+                        <h3>Nome do projeto</h3>
+                    </section>
+                </section>
+
+            </section>
+        </section>
+    </section>
+    <!-- Vertically centered modal -->
+
+
+    <!--inicio do sobre-->
+    <div class="container">
+        <div class="row container-sobre">
+            <div class="col-md-6 d-inline-flex justify-content-center"><img src="./images/sobre.png" alt="" class="img-fluid"></div>
+            <div class="col-md-6">
+                <h2 id="sobre" class="text-center">Sobre</h2>
+                <p class="text-center">"Starfield" é um aguardado jogo de RPG de mundo aberto desenvolvido pela Bethesda Game Studios, ambientado em um universo de ficção científica no espaço. A Bethesda é conhecida por criar mundos detalhados, e os jogadores esperam uma experiência imersiva. Embora poucos detalhes tenham sido revelados, os jogadores podem esperar exploração espacial, colonização de planetas e narrativas envolventes. O jogo foi anunciado como um exclusivo para Xbox e PC, com uma data de lançamento originalmente prevista para 11 de novembro de 2022</p>
+
+            </div>
+            
+        </div>
+
+        <div class="row container-sobre">
+            
+            <div class="col-md-6">
+                <h2 class="text-center">Jogabilidade</h2>
+                <p class="text-center">A jogabilidade de "Starfield" ainda não foi detalhada oficialmente pela Bethesda. No entanto, é esperado que o jogo envolva exploração espacial, pilotagem de naves, personalização de personagens e naves, e uma ampla gama de locais para os jogadores explorarem.</p>
+            </div>
+            <div class="col-md-6"><img src="./images/1336628.png" alt="" class="img-fluid"></div>
+        </div>
+        <div class="row container-sobre">
+            <div class="col-md-6"><img src="./images/1336625.png" alt="" class="img-fluid"></div>
+            <div class="col-md-6">
+                <h2 class="text-center">Desenvolvimento</h2>
+                <p class="text-center">"Starfield" está sendo desenvolvido pela Bethesda Game Studios com a utilização da Creation Engine 2, uma nova tecnologia. O jogo é altamente ambicioso e mantido em sigilo, com a Bethesda conhecida por criar mundos abertos imersivos. A aquisição da Bethesda pela Microsoft tornou "Starfield" um título exclusivo para Xbox e PC. A data de lançamento inicial era 11 de novembro de 2022, mas as datas de lançamento de jogos podem ser adiadas</p>
+            </div>
+        </div>
+    </div>
+    <!--final do sobre-->
+
+    <!--inicio contato-->
+    <div class="row" id="footer">
+        
+        <div class="col-md-6">
+            <h1 class="text-center text" id="contato">Entre em contato</h1>
+            <center>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-facebook"></i>
+              </center>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"><h4>Digite seu email</h4></label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"><h4>Digite seu texto</h4></label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="col-auto">
+                    <button type="button" class="btn btn-outline-dark">Enviar email</button>
+                  </div>
+              </div>
+              
+        </div>
+        <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.4416085296793!2d-48.50296625594431!3d-20.934773567848538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bbe469e09506f1%3A0x336e767ffea97cdf!2sSesi-SP!5e0!3m2!1spt-BR!2sbr!4v1698426309537!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe></div>
+    </div>
+    <!--final contato-->
+<!--bootstrap js-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" defer></script>
+</body>
+</html>
